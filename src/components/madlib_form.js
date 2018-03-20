@@ -55,9 +55,9 @@ class MadlibForm extends Component {
     }
 
     handleSubmit = function(event) {
-        console.log("Hello World");
+        this.setState({completedForm: true});
         event.preventDefault();
-    }.bind('this');
+    }.bind(this);
 
     render() { 
 
