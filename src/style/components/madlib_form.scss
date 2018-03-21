@@ -44,13 +44,8 @@ input {
 }
 
 .generate-button {
-    height: 50px;
-    width: 300px;
-    border-radius: 4px;
     background-color: $primaryColor;
-    color: white;
-    font-size: 1.25em;
-
+    @include buttonStyles;
 }
 
 .button-wrapper {
@@ -59,8 +54,18 @@ input {
     align-items: center;
 }
 
+.clear-button {
+    background-color: $secondaryColor;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.6);
+    padding-top: 9px;
+    text-align: center;
+    @include buttonStyles;
+}
 
-
+input:focus,
+button:focus {
+    outline: none;
+}
 
 
 
